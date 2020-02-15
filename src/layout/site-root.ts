@@ -11,15 +11,18 @@ import { until } from 'lit-html/directives/until';
 import { pre } from '../styles';
 
 
-const styles: CSSResult = css``;
+const styles:
+CSSResult = css``;
 
 
 @customElement('site-root')
 export class SiteRoot extends LitElement {
 
-  accent: string = `🔥`;
+  accent:
+  string = `🔥`;
 
-  get hello(): Promise<TemplateResult> { 
+  get hello():
+  Promise<TemplateResult> { 
     return fetch(`/data/hello.json`)
       .then(res => res.json())
       .then(data => data.map(item =>
@@ -32,7 +35,8 @@ export class SiteRoot extends LitElement {
       ));
   }
 
-  get hold(): TemplateResult {
+  get hold():
+  TemplateResult {
     return html`
       <card-skeleton></card-skeleton>
       <card-skeleton></card-skeleton>
@@ -40,12 +44,14 @@ export class SiteRoot extends LitElement {
     `;
   }
 
-  static styles: Array<CSSResult> = [
+  static styles:
+  Array<CSSResult> = [
     pre,
     styles,
   ];
 
-  render(): TemplateResult {
+  render():
+  TemplateResult {
     return html`
       <site-header .emote=${this.accent}></site-header>
 

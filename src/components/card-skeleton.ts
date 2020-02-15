@@ -8,7 +8,8 @@ import {
 } from 'lit-element';
 
 
-const styles: CSSResult = css`
+const styles:
+CSSResult = css`
   :host {
     display: block;
     grid-column: span 4;
@@ -42,11 +43,13 @@ const styles: CSSResult = css`
 @customElement('card-skeleton')
 export class CardSkeleton extends LitElement {
 
-  static styles: Array<CSSResult> = [
+  static styles:
+  Array<CSSResult> = [
     styles,
   ];
 
-  render(): TemplateResult {
+  render():
+  TemplateResult {
     return html`
       <div data-background>
         <div data-title></div>

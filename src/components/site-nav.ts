@@ -11,7 +11,8 @@ import {
 import { pre } from '../styles';
 
 
-const styles: CSSResult = css`
+const styles:
+CSSResult = css`
   :host {
     display: block;
     block-size: 90px;
@@ -46,12 +47,14 @@ export class SiteNav extends LitElement {
   @property({ type: String })
   home = `/home`;
 
-  static styles: Array<CSSResult> = [
+  static styles:
+  Array<CSSResult> = [
     pre,
     styles,
   ];
 
-  render(): TemplateResult {
+  render():
+  TemplateResult {
     return html`
       <nav data-wrap>
         <a href=${this.home}>Home</a>

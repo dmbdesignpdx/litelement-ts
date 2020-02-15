@@ -11,7 +11,8 @@ import {
 import { pre } from '../styles';
 
 
-const styles: CSSResult = css`
+const styles:
+CSSResult = css`
   header {
     display: flex;
     block-size: 60vh;
@@ -37,12 +38,14 @@ export class SiteHeader extends LitElement {
   @property({ type: String })
   emote = ``;
 
-  static styles: Array<CSSResult> = [
+  static styles:
+  Array<CSSResult> = [
     pre,
     styles,
   ];
 
-  render(): TemplateResult {
+  render():
+  TemplateResult {
     return html`
       <header
         id="Hero"

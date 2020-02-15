@@ -9,7 +9,8 @@ export const Head:
 Function = (tags: Array<Props>): void => {
 
   tags.forEach((tag): void => {
-    const el: HTMLElement = document.createElement(tag.type);
+    const el:
+    HTMLElement = document.createElement(tag.type);
 
     Object.keys(tag).forEach((key): void => {
       if (key !== `type`) {

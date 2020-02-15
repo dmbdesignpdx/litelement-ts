@@ -10,7 +10,8 @@ import {
 import { pre } from '../styles';
 
 
-const styles: CSSResult = css`
+const styles:
+CSSResult = css`
   :host {
     display: block;
     margin-block-start: 10vh;
@@ -30,12 +31,14 @@ export class SiteFooter extends LitElement {
   @property({ type: String })
   home = `/home`;
 
-  static styles: Array<CSSResult> = [
+  static styles:
+  Array<CSSResult> = [
     pre,
     styles,
   ];
 
-  render(): TemplateResult {
+  render():
+  TemplateResult {
     return html`
       <footer data-wrap>
         <a href=${this.home}>Home</a>

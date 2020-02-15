@@ -21,7 +21,8 @@ export class CardPrimary extends LitElement {
   copy =  ``;
   
 
-  static styles: Array<CSSResult> = [
+  static styles:
+  Array<CSSResult> = [
     pre,
     css`
       :host {
@@ -49,9 +50,10 @@ export class CardPrimary extends LitElement {
         margin-block-start: 1em;
       }
     `
-  ]
+  ];
 
-  render(): TemplateResult {
+  render():
+  TemplateResult {
     return html`
       <article>
         <h1>${this.title}</h1>
