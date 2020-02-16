@@ -52,7 +52,7 @@ export class SiteHeader extends LitElement {
         data-wrap
       >
 
-        <h1>${this.emote} LIT ${this.emote}</h1>
+        <h1>${this.emote} LitWeb ${this.emote}</h1>
 
         <p>Web Components built with LitElement and lit-html.</p>
 

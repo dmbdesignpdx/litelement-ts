@@ -1,5 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
+import livereload from 'rollup-plugin-livereload'
 
 
 const dev = process.env.ROLLUP_WATCH
@@ -14,5 +15,6 @@ export default {
   plugins: [
     resolve(),
     typescript(),
+    dev && livereload(),
   ]
 }
