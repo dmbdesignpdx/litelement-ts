@@ -19,10 +19,8 @@ export class CardPrimary extends LitElement {
 
   @property({ type: String })
   copy =  ``;
-  
 
-  static styles:
-  Array<CSSResult> = [
+  static styles: Array<CSSResult> = [
     pre,
     css`
       :host {
@@ -52,8 +50,7 @@ export class CardPrimary extends LitElement {
     `
   ];
 
-  render():
-  TemplateResult {
+  render(): TemplateResult {
     return html`
       <article>
         <h1>${this.title}</h1>
