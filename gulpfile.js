@@ -26,7 +26,7 @@ const buildCrit = () => (
 
 
 /**
- * WATCHE
+ * WATCH
  */
 const watchCrit = () => {
   gulp.watch([

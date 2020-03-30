@@ -15,14 +15,13 @@ import { pre } from '../styles';
 export class CardPrimary extends LitElement {
 
   @property({ type: String })
-  title =  ``;
+  title =  '';
 
   @property({ type: String })
-  copy =  ``;
+  copy =  '';
 
-  
   @property({ type: String })
-  theme = `primary`;
+  theme = 'primary';
 
   static styles: Array<CSSResult> = [
     pre,
